@@ -1,0 +1,51 @@
+body{
+    margin: 0;
+    // background: rgba(30,30,30,255);
+    background: rgba(23, 30, 33, 1);
+    min-height: 200vh;
+    overflow-x: hidden;
+    background-image: url('/public/images/texture.svg');
+    background-size: contain;
+    background-repeat: repeat-y;
+}
+* {
+    font-family: 'Montserrat', sans-serif;
+    color: #E4E4E4;
+}
+
+.text-alternates{
+    font-family: "Montserrat Alternates", 'Montserrat', sans-serif;
+}
+.text-encode{
+    font-family: "Encode Sans Condensed", 'Montserrat', sans-serif;
+}
+.text-italic{
+    font-style: italic;
+}
+.filter-white{
+    filter: invert(99%) sepia(1%) saturate(281%) hue-rotate(283deg) brightness(112%) contrast(79%);
+}
+.filter-grey{
+    filter: invert(68%) sepia(11%) saturate(149%) hue-rotate(147deg) brightness(90%) contrast(87%);
+}
+h6{
+    font-size: 1rem;
+}
+h5{
+    font-size: 1.25rem;
+}
+h4{
+    font-size: 1.5rem;
+}
+h3{
+    font-size: 2rem;
+}
+h2{
+    font-size: 2.5rem;
+}
+h1{
+    font-size: 4rem;
+}
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+}
