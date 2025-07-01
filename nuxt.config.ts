@@ -7,9 +7,14 @@ export default defineNuxtConfig({
     '@nuxtjs/google-fonts',
     '@nuxt/image',
     'shadcn-nuxt',
-    "@nuxtjs/tailwindcss"
+    '@nuxtjs/i18n',
+    '@nuxtjs/color-mode',
   ],
+  colorMode: {
+    classSuffix: ''
+  },
   plugins: [
+    '~/plugins/dark-mode.client.ts',
   ],
   shadcn: {
     componentDir: './components/ui',
@@ -22,9 +27,9 @@ export default defineNuxtConfig({
     },
   },
   css: [
+    '~/assets/tailwind.css',
     "~/assets/base.scss",
-     "~/assets/base.css",
-     '~/assets/tailwind.css',
+    "~/assets/base.css",
   ],
   googleFonts: {
     families: {
@@ -34,4 +39,22 @@ export default defineNuxtConfig({
     },
     preload: true,
   },
+  i18n: {
+    defaultLocale: "en",
+    strategy: "no_prefix",
+    langDir: "",
+    locales: [
+      { code: "en", file: 'en/index.js' },
+      { code: "kz", file: 'kz/index.js' },
+      { code: "ru", file: 'ru/index.js' },
+    ],
+    lazy: true,
+    detectBrowserLanguage: {
+      useCookie: true,
+      cookieKey: "language",
+      alwaysRedirect: true,
+      fallbackLocale: "en",
+      redirectOn: 'root',
+    },
+  }
 })

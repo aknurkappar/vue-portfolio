@@ -10,9 +10,7 @@ body{
 }
 * {
     font-family: 'Montserrat', sans-serif;
-    color: #E4E4E4;
 }
-
 .text-alternates{
     font-family: "Montserrat Alternates", 'Montserrat', sans-serif;
 }
@@ -25,27 +23,20 @@ body{
 .filter-white{
     filter: invert(99%) sepia(1%) saturate(281%) hue-rotate(283deg) brightness(112%) contrast(79%);
 }
+.click.filter-white{
+    // cursor: pointer;
+    // padding: 0.4rem;
+    // &:hover{
+    //     background: rgb(228, 228, 228, 0.5);
+    //     border-radius: 100px;
+    // }
+}
 .filter-grey{
     filter: invert(68%) sepia(11%) saturate(149%) hue-rotate(147deg) brightness(90%) contrast(87%);
 }
-h6{
-    font-size: 1rem;
-}
-h5{
-    font-size: 1.25rem;
-}
-h4{
-    font-size: 1.5rem;
-}
-h3{
-    font-size: 2rem;
-}
-h2{
-    font-size: 2.5rem;
-}
-h1{
-    font-size: 4rem;
-}
-h1, h2, h3, h4, h5, h6{
-    margin: 0;
+.click.filter-grey{
+    cursor: pointer;
+    &:hover{
+        filter: invert(68%) sepia(11%) saturate(149%) hue-rotate(147deg) brightness(120%) contrast(87%);
+    }
 }
